@@ -1,0 +1,16 @@
+version: "2"
+services:
+  analytic-client:
+    image: kafka-client
+    ports:
+      - 8080:80
+    links:
+      - api-backend
+      - db
+    depends_on:
+      - api-backend
+      - db
+
+  api-backend:
+    image: api-server
+

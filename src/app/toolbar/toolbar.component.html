@@ -1,0 +1,42 @@
+<div id="wrapper">
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+            <nav class="navbar navbar-light navbar-expand fixed-top bg-white shadow mb-4 topbar static-top">
+                <div class="container-fluid">
+                    <div class="input-group no-arrow">
+                        <ul class="nav navbar-nav flex-fill">
+                            <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                                <a class="dropdown-toggle nav-link" aria-expanded="false" [routerLink]="['/']">
+                                    <i class="fas fa-home fa-2x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav flex-nowrap ml-auto">
+                        <li class="nav-item no-arrow" role="presentation">
+                            <ul>
+                                <li class="nav-item dropdown no-arrow">
+                                    <a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false" href="#">
+                                        <span class="d-none d-lg-inline mr-2 text-gray-600 small"><i class="fas fa-cog"></i> Administration</span>
+                                    </a>
+                                    <div
+                                            class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu">
+                                        <a class="dropdown-item" [routerLink]="['/topics']">
+                                            <i class="fas fa-calendar fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Topics</a>
+                                        <a class="dropdown-item" [routerLink]="['/noeuds']">
+                                            <i class="fas fa-calendar fa-sm fa-fw mr-2 text-gray-400"></i> Noeuds</a>
+                                   
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<main class="content">
+    <router-outlet></router-outlet>
+</main>
