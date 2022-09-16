@@ -28,7 +28,7 @@
     "@angular/router": "^6.0.3",
     "angular-calendar": "^0.25.2",
     "angular-highcharts": "^7.0.2",
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "cryptr": "^4.0.1",
     "font-awesome": "^4.7.0",
